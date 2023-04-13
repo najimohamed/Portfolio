@@ -5,6 +5,8 @@
 	<link href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 
+	<script src="1.js"></script>
+
 </head>
 <body>
    <div class="container-fluid">
@@ -60,7 +62,7 @@
 	
 		<div class="container-fluid form-group col-md-9">
 			<section id="Über mich">
-			<h2><ins><i>Über mich:</i></ins></h2>
+			<h2><ins><i>Über mich :</i></ins></h2>
 			<p id="p1">Mein Name ist Mohamed Naji, ich bin 23 Jahr alt, ich bin ein Fachinformatiker aus Marokko.Ich habe schon einen Abitur und Diplom, Ich habe meine Fähigkeiten durch 2 Praktika geschärft, 
 			   Ich habe eine solide Grundlage in verschiedenen technischen Fähigkeiten erworben.
 			   Ich interessiere mich für Computer und ihre Funktionen seit meiner Jugend. Ich wollte genau wissen, wie so ein Computer überhaupt funktioniert. Ich will unbedingt beruflich etwas im Bereich IT machen.</p>
@@ -70,33 +72,45 @@
 	<main>
 		</section><br><br><br>
 
-		<section id="Lebenslauf"><br>
-			<h2 class="container-fluid text text-center"><ins><i>Lebenslauf:</i></ins></h2>
-			<div style="text-align:center">
+		<section id="Lebenslauf">
+			<h2 class="container-fluid text text-center"><ins><i>Lebenslauf :</i></ins></h2>
+            
+			<a href="Lebenslauf.pdf"><button id="pdf-button" value="Open PDF"><ins>PDF</ins></button></a>
+			
+			<!-- <div style="text-align:center">
 			<embed src="Lebenslauf.pdf" type="application/pdf" width="500" height="600">
-			</div>	
+			</div> -->
+
+			<div style="text-align:center">
+			<img id="cv" src="CV.png" width="500" height="600">
+			</div>
+			
 		</section><br>
 
 		<section id="Projects">
-			<h2 class="container-fluid"><ins><i>Projects:</i></ins></h2><br><br>
+			<h2 class="container-fluid"><ins><i>Projects :</i></ins></h2><br><br>
 			<ul class="list-group container">
 				<li class="list-group-item">
-					<h3>Portfolio Website</h3>
-					<p>This Website</p>
+					<h3>Portfolio Website</h3>					
 				</li>
 				<li class="list-group-item">
 					<h3>Informational Website</h3>
-					<p>A website where you can learn about foreign countries, also allow you to download high quality wallpapers</p>
+					<p>The common functionalities are:</p>
+					<ul>
+						<li>CSS- shadow and animation properties</li> 						
+						<li>The user can see the countries and their maps</li>
+						<li>the user can download the wallpepers</li>
+					</ul>
 				</li>
 				<li class="list-group-item">
 					<h3>Games Website</h3>
-					<p>A website that allow you to play some games</p>
+					<p>This project based mostly about Javascript functionalities</p>
 				</li>
 			</ul><br>
 			
 			<div class="row">
 				<div class="form-group col-md-6 container" style="text-align: center;">			
-                <p class="text text-center" id="p2">Project 2: Wallpepers Website</p><br>
+                <p class="text text-center" id="p2">Project 2: Informational Website</p><br>
 				<video controls muted width="400" id=><br>
 					<source src="Wallpepers Website.mp4">					
 				</video></div>	
@@ -119,7 +133,7 @@
 		
 		<section id="Contact">
 			<div class="container-fluid">
-			<h2><ins><i>Contact me:</i></ins></h2><br>
+			<h2><ins><i>Contact me :</i></ins></h2><br>
 			<label id="p2">Email: najimohamed853@gmail.com</label><br>
 			<label id="p2">Tel:+212 682298630</label><br><br>
 			<!--
