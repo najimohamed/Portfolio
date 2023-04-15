@@ -1,10 +1,11 @@
 #p1{
     border-style:solid;
 	border-width: 5px;
-	border-color: rgb(17, 17, 16);
+	border-color: rgb(8, 8, 6);
 	border-radius: 10px;
 	padding: 5px;
-    color: white;
+    color: rgb(235, 235, 235);
+	background-color: black;
 }
 
 body{
@@ -38,5 +39,6 @@ button:hover{background-color: #488aa4;}
   #pdf-button:hover{background-color:#488aa4;}
 
 #cv{ margin-top:40px;}
+#ln{margin-left: 50%;}
   
 
