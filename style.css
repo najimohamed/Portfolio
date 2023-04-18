@@ -39,6 +39,13 @@ button:hover{background-color: #488aa4;}
   #pdf-button:hover{background-color:#488aa4;}
 
 #cv{ margin-top:40px;}
-#ln{margin-left: 50%;}
-  
+
+
+#Projects{ background-image: url(projects.jpg);
+           background-repeat: no-repeat;
+		   background-attachment: fixed;
+	       background-position: center;
+	       background-size: cover;}
+
+
 
