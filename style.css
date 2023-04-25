@@ -20,17 +20,18 @@ body{
 	background-attachment: fixed;   
 }
 
-h2{color: white;}
+h2,h4{color: white;}
 #hh3{color: white;}
 
 #p2{color: white;}
 #sk{background-color: rgb(0, 0, 0);
     border-style: dotted ;
     border-color: #95A5A6;
-    padding-top: 25px;
+    padding-top: 50px;
     padding-bottom: 25px;}   
 
 #p3{color: white;}
+
 button:hover{background-color: #488aa4;}
 .nav-item:hover {background-color: #488aa4;}
 
@@ -39,13 +40,11 @@ button:hover{background-color: #488aa4;}
 	color: white;
 	border-radius:5px;
 	padding: 10px;
-	 /* "cursor: pointer;" this property in CSS changes the mouse cursor to a hand icon when it hovers over an element, indicating that the element is clickable.*/
-	float: right;
-    margin-right: 15px;    
-  }
-  #pdf-button:hover{background-color:#488aa4;}
+	 /* "cursor: pointer;" this property in CSS changes the mouse cursor to a hand icon when it hovers over an element, indicating that the element is clickable.*/    
+}
+#pdf-button:hover{background-color:#488aa4;}
 
-#cv{ margin-top:40px;}
+#cv{ margin-top:30px;}
 
 
 #Projects{ background-image: url(projects.jpg);
