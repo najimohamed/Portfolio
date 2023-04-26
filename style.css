@@ -11,7 +11,7 @@
 	padding: 5px;
     color: rgb(235, 235, 235);
 	background-color: black;
-	width: 20cm;
+	width: 16cm;
 }
 
 body{
@@ -26,9 +26,11 @@ h2,h4{color: white;}
 #p2{color: white;}
 #sk{background-color: rgb(0, 0, 0);
     border-style: dotted ;
-    border-color: #95A5A6;
+    border-color: white;
     padding-top: 50px;
-    padding-bottom: 25px;}   
+    padding-bottom: 25px;
+    border-radius: 10px;
+width: 100%;}   
 
 #p3{color: white;}
 
@@ -52,6 +54,15 @@ button:hover{background-color: #488aa4;}
 		   background-attachment: fixed;
 	       background-position: center;
 	       background-size: cover;}
+
+#co{width: 500px;
+	background-color: black;
+	border-style:dotted;
+	color: white;
+	border-radius: 10px;
+	      
+
+}
 
 
 
