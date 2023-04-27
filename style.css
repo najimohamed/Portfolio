@@ -1,11 +1,11 @@
 .home{align-items: center;
       height: 80vh;}
 
-.home h2{font-size: 50px;
-         font-weight: 500;}
+.home h2{font-size: 45px;
+         font-weight: 450;}
 
-.home p{font-size: 28px;
-        font-weight: 500;}
+.home p{font-size: 25px;
+        font-weight: 450;}
 
 
 #p1{max-width: 600px;
@@ -25,7 +25,10 @@ h2,h4{color: white;}
 
 button:hover{background-color: #488aa4;}
 .nav-item:hover {background-color: #488aa4;}
-#pdf-button:hover{background-color:#488aa4;}
+
+#pdf-button:hover{background-color:#081b29;
+	color: #00abf0;
+	border-color: #00abf0;}
 
 #pdf-button{
 	background-color: #00abf0;
