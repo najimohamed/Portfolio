@@ -1,22 +1,31 @@
 .home{align-items: center;
       height: 80vh;}
+	  
 
 .home h2{font-size: 45px;
-         font-weight: 450;}
+	     font-weight: 500;}
+	
+.home h3{color: #00abf0;
+		font-size: 30px;
+		font-weight: 500;}
 
 .home p{font-size: 25px;
-        font-weight: 450;}
-
+        font-weight: 450;
+	    color: white;
+	    width: 800px;}
 
 #p1{max-width: 600px;
-    color: rgb(235, 235, 235);	}
+    color: rgb(235, 235);	}
 
 body{
 	background: #081b29;
 	background-repeat: no-repeat;
 	background-attachment: fixed;}
 
-h2,h4{color: white;}
+
+
+h2{color: white;}
+h4{color: black;}
 #hh3{color: white;}
 
 
