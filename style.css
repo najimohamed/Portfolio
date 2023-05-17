@@ -15,7 +15,9 @@
 	    width: 700px;}
 
 #p1{max-width: 600px;
-    color: rgb(235, 235);}
+    color: rgb(235, 235);
+
+margin-left: 20px;}
 
 body{
 	background: #081b29;
@@ -56,7 +58,9 @@ button:hover{background-color: #488aa4;}
 
 #sk{background: linear-gradient(to bottom right, black, #081b29);
     padding-top: 20px;
-    padding-bottom: 20px;}
+    padding-bottom: 20px;
+
+	text-align: center;}
 
 #co{background-image: url(00.jpg);
 	background-repeat: no-repeat;
@@ -123,6 +127,7 @@ button:hover{background-color: #488aa4;}
 	}
 }
 
+#w{margin-top: 20px;}
 
 
 
