@@ -132,7 +132,9 @@ button:hover{background-color: #488aa4;}
 	}
 }
 
-#w{margin-top: 20px;}
+#w{margin-top: 20px;
+  max-width: 100%; 
+  height: auto;}
 
 
 
