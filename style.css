@@ -58,22 +58,11 @@ body{
 h2{color: white;}
 h4{color: black;}
 #hh3{color: white;}
-
-@media (max-width: 767px) {
-  #hh3 {
-
-  }
-}
-
 #p2{color: white;}
 #p3{color: white;}
 
 button:hover{background-color: #488aa4;}
 .nav-item:hover {background-color: #488aa4;}
-
-#pdf-button:hover{background-color:#081b29;
-  color: #00abf0;
-  border-color: #00abf0;}
 
 #pdf-button{
   background-color: #00abf0;
@@ -82,7 +71,32 @@ button:hover{background-color: #488aa4;}
   padding: 10px;
   font-size: 18px;
   width: 150px;} /* "cursor: pointer;" this property in CSS changes the mouse cursor to a hand icon when it hovers over an element, indicating that the element is clickable.*/
-       
+#pdf-button:hover{background-color:#081b29;
+  color: #00abf0;
+  border-color: #00abf0;}
+@media (max-width: 767px) {
+    #pdf-button {
+      font-size: 14px;
+      width: 100px; 
+    }}
+
+#pdf-be{
+    background-color: #00abf0;
+    color: black;
+    border-radius:8px;
+    padding: 10px;
+    font-size: 18px;
+    width: 150px;
+    margin-bottom: 40px;}
+#pdf-be:hover{background-color:#081b29;
+    color: #00abf0;
+    border-color: #00abf0;}
+@media (max-width: 767px) {
+      #pdf-be {
+        font-size: 14px;
+        width: 100px; 
+      }}
+
 #Projects{ background-image: url(projects.jpg);
 		 background-repeat: no-repeat;
 		 background-attachment: fixed;
@@ -121,79 +135,36 @@ button:hover{background-color: #488aa4;}
     transform: none; /*disable hover effect */
   }}
 
-@media (max-width: 835px) {
-  .home h2 {
-    font-size: 20px; 
-  }
-  .home h3 {
-    font-size: 18px; 
-  }
-  .home p {
-    font-size: 16px;
-  }}
-
-@media (max-width: 768px) {
-  .home h2 {
-    font-size: 18px; 
-  }
-  .home h3 {
-    font-size: 16px; 
-  }
-  .home p {
-    font-size: 14px;
-  }}
-
 @media (max-width: 767px) {
   .home  {
-      margin-bottom: 200px; 
-  }}
-
+        margin-bottom: 180px; 
+    }}
 @media (max-width: 600px) {
   .home h2 {
-    font-size: 22px; 
-  }
+        font-size: 20px; 
+      }
   .home h3 {
-    font-size: 20px; 
-  }
+        font-size: 18px; 
+      }
   .home p {
-    font-size: 18px;
-  }
+        font-size: 16px;
+      }
   .home  {
-    margin-bottom: 300px; 
-  }}
-  
-@media (max-width: 562px) {
+        margin-bottom: 300px; 
+      }}
+@media (max-width: 390px) {
   .home h2 {
-    font-size: 20px; 
-  }
+            font-size: 18px; 
+        }
   .home h3 {
-    font-size: 18px; 
-  }
+            font-size: 16px; 
+        }
   .home p {
-    font-size: 16px;
-  }}
-
-@media (max-width: 402px) {
-  .home h2 {
-    font-size: 18px; 
-  }
-  .home h3 {
-    font-size: 16px; 
-  }
-  .home p {
-    font-size: 14px;
-  }}
-
-@media (max-width: 326px) {
-  .home h2 {
-    font-size: 16px; 
-  }
-  .home h3 {
-    font-size: 14px; 
-  }
-  .home p {
-    font-size: 12px;
-  }}
+            font-size: 14px;
+        }
+  .home  {
+            margin-bottom: 300px; 
+        }}
 
 .box div{
     position:absolute;
@@ -268,9 +239,9 @@ body, html {
     margin-top: -200px;
   }}
 
-  @media (max-width: 395px) {
+  @media (max-width: 600px) {
     #Projects {
-    margin-top: -200px;
+    margin-top: -250px;
   }}
 
   @media (max-width: 767px) {
@@ -285,7 +256,8 @@ body, html {
       height: auto; /* Maintain aspect ratio */
       max-width: 300px; /* Set a maximum width for smaller screens */
       max-height: 200px;
-    }}
+    }
+}
   
 
 
