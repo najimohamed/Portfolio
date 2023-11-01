@@ -108,6 +108,12 @@ button:hover{background-color: #488aa4;}
   padding-bottom: 20px;
   text-align: center;}
 
+  @media (max-width: 767px) {
+    #sk {
+      background-size: cover; /* Maintain aspect ratio */
+    }
+  }
+
 #co{background-image: url(img/00.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
