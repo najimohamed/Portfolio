@@ -97,7 +97,7 @@ button:hover{background-color: #488aa4;}
         width: 100px; 
       }}
 
-#Projects{ background-image: url(projects.jpg);
+#Projects{ background-image: url(img/projects.jpg);
 		 background-repeat: no-repeat;
 		 background-attachment: fixed;
 		 background-position: center;
@@ -108,7 +108,7 @@ button:hover{background-color: #488aa4;}
   padding-bottom: 20px;
   text-align: center;}
 
-#co{background-image: url(00.jpg);
+#co{background-image: url(img/00.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -130,7 +130,7 @@ button:hover{background-color: #488aa4;}
 }
 
 #w:hover{transform: scale(1.2);}
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
   #w:hover {
     transform: none; /*disable hover effect */
   }}
@@ -258,10 +258,6 @@ body, html {
       max-height: 200px;
     }
 }
-  
-
-
-
 
 
 
