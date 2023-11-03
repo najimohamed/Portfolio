@@ -10,18 +10,29 @@
   height: 300px;}
 
 @media (max-width: 1015px) {
-  #profile-image {
-     margin-top: 20px;
-     margin-left: 20px;
+#profile-image {
      width: 220px; 
      height: 220px;}}
 
 @media (max-width: 815px) {
-  #profile-image {
-     margin-top: 20px;
-     margin-left: 20px;
+#profile-image {
      width: 250px; 
      height: 250px;}}
+
+@media (max-width: 500px) {
+#profile-image { 
+    width: 220px; 
+    height: 220px;}}
+
+@media (max-width: 390px) {
+#profile-image {    
+    width: 200px; 
+    height: 200px;}}
+
+@media (max-width: 270px) {
+  #profile-image {
+      width: 150px; 
+      height: 150px;}}
 
 .home h2{
     font-size: 35px;
@@ -97,7 +108,8 @@ button:hover{background-color: #488aa4;}
         width: 100px; 
       }}
 
-#Projects{ background-image: url(img/projects.jpg);
+#Projects{ 
+     background-image: url(img/projects.jpg);
 		 background-repeat: no-repeat;
 		 background-attachment: fixed;
 		 background-position: center;
@@ -108,11 +120,6 @@ button:hover{background-color: #488aa4;}
   padding-bottom: 20px;
   text-align: center;}
 
-  @media (max-width: 767px) {
-    #sk {
-      background-size: cover; /* Maintain aspect ratio */
-    }
-  }
 
 #co{background-image: url(img/00.jpg);
   background-repeat: no-repeat;
@@ -143,18 +150,9 @@ button:hover{background-color: #488aa4;}
 
 @media (max-width: 767px) {
   .home  {
-        margin-bottom: 180px; 
+        margin-bottom: 140px; 
     }}
 @media (max-width: 600px) {
-  .home h2 {
-        font-size: 20px; 
-      }
-  .home h3 {
-        font-size: 18px; 
-      }
-  .home p {
-        font-size: 16px;
-      }
   .home  {
         margin-bottom: 300px; 
       }}
@@ -169,8 +167,20 @@ button:hover{background-color: #488aa4;}
             font-size: 14px;
         }
   .home  {
-            margin-bottom: 300px; 
+            margin-bottom: 200px; 
         }}
+
+@media (max-width: 270px) {
+  .home h2 {
+            font-size: 16px; 
+        }
+  .home h3 {
+            font-size: 14px; 
+        }
+  .home p {
+            font-size: 12px;
+        }
+}
 
 .box div{
     position:absolute;
@@ -227,28 +237,28 @@ button:hover{background-color: #488aa4;}
 body, html {      
     overflow-x: hidden; /*prevent horizontal scrolling on smaller screens.*/ }
   
-  @media (max-width: 767px) {
-    #Projects {
-    margin-top: -100px;
-  }}
-  @media (max-width: 604px) {
-    #Projects {
-    margin-top: -150px;
-  }}
-
-  @media (max-width: 482px) {
-    #Projects {
-    margin-top: -200px;
-  }}
-  @media (max-width: 414px) {
-    #Projects {
-    margin-top: -200px;
-  }}
-
-  @media (max-width: 600px) {
-    #Projects {
-    margin-top: -250px;
-  }}
+    @media (max-width: 767px) {
+      #Projects {
+      margin-top: -100px;
+    }}
+    @media (max-width: 604px) {
+      #Projects {
+      margin-top: -150px;
+    }}
+  
+    @media (max-width: 482px) {
+      #Projects {
+      margin-top: -200px;
+    }}
+    @media (max-width: 414px) {
+      #Projects {
+      margin-top: -200px;
+    }}
+  
+    @media (max-width: 600px) {
+      #Projects {
+      margin-top: -250px;
+    }} 
 
   @media (max-width: 767px) {
     #w {
@@ -265,7 +275,12 @@ body, html {
     }
 }
 
-
+/* Add styles to center content in the middle for phone screens */
+@media (max-width: 580px) {
+  .container {
+    margin-left: 5px;        
+  }
+}
 
 
 
