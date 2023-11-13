@@ -1,19 +1,19 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+                                /*==========navbar==========*/
 .navbar-brand{
   font-size: 25px;
-  margin-left: 20px;
-}
+  margin-left: 20px;}
 .navbar-nav{
   font-size: 20px;
   gap: 3rem;
-  margin-right: 40px;
-}
+  margin-right: 40px;}
+/*button:hover{background-color: #488aa4;}*/
+.nav-item:hover {background-color: #488aa4;}
+@media (max-width: 992px) {
+  .nav-item:hover {
+    background-color: initial; /* removed the hover effect */
+  }}
 
+                               /*==========Home==========*/
 .home{
   align-items: center;
 	height: 95vh;
@@ -40,11 +40,6 @@
       width: 220px; 
       height: 220px;}}
     
-@media (max-width: 500px) {
-#profile-image { 
-    width: 220px; 
-    height: 220px;}}
-
 @media (max-width: 390px) {
 #profile-image {    
     width: 200px; 
@@ -58,12 +53,10 @@
 .home h2{
     font-size: 35px;
 	  font-weight: 500;}
-
 .home h3{
     color: #00abf0;
 	  font-size: 30px;
 	  font-weight: 450;}
-
 .home p{
     font-size: 25px;
 	  font-weight: 400;
@@ -82,6 +75,14 @@
       .home p{
           font-size: 20px;
           font-weight: 350;}}
+
+    @media (max-width: 875px) { 
+      .home h2 {
+        font-size: 25px;}
+      .home h3 {
+        font-size: 20px;}
+      .home p {
+        font-size: 15px;}}
 
 
 @media (min-width: 769px) and (max-width: 814px){
@@ -106,22 +107,8 @@
   color: rgb(235, 235);
   padding-left: 25px;}
 
-body{
-  background: #081b29;}
-
+body{background: #081b29;}
 h2{color: white;}
-h4{color: black;}
-#hh3{color: white;}
-#p2{color: white;}
-#p3{color: white;}
-
-/*button:hover{background-color: #488aa4;}*/
-.nav-item:hover {background-color: #488aa4;}
-@media (max-width: 992px) {
-  .nav-item:hover {
-    background-color: initial; /* removed the hover effect */
-  }
-}
 
 #pdf-button{
   background-color: #00abf0;
@@ -139,7 +126,60 @@ h4{color: black;}
       width: 100px; 
     }}
 
-#pdf-be{
+/*button:hover{background-color: #488aa4;}*/
+.nav-item:hover {background-color: #488aa4;}
+@media (max-width: 992px) {
+  .nav-item:hover {
+    background-color: initial; /* removed the hover effect */
+  }
+}
+
+.home::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: move 1s ease forwards;
+  animation-delay: 0.4s;
+  height: 100%;
+  width: 100%;
+  background-color:#081b29;
+}
+@keyframes move {
+  100% {
+     width: 0;
+  }}
+
+                                              /*==========Projects==========*/ 
+#Projects{ 
+  background-image: url(img/projects.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;}
+
+  h4{color: black;}
+  #hh3{color: white;}
+  #p2{color: white;}
+
+  #w{margin-top: 20px;
+    max-width: 100%; 
+    height: auto; 
+  }
+  #w:hover{transform: scale(1.2);}
+  @media (max-width: 1400px) {
+    #w:hover {
+      transform: none; /*disable hover effect */
+    }}
+
+                                             /*==========skills==========*/   
+#sk{
+  background: linear-gradient(to bottom right, black, #081b29);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;}
+
+  #pdf-be{
     background-color: #00abf0;
     color: black;
     border-radius:8px;
@@ -153,23 +193,11 @@ h4{color: black;}
 @media (max-width: 767px) {
       #pdf-be {
         font-size: 14px;
-        width: 100px; 
-      }}
+        width: 100px;}}  
 
-#Projects{ 
-  background-image: url(img/projects.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;}
-    
-#sk{
-  background: linear-gradient(to bottom right, black, #081b29);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;}
+#p3{color: white;}
 
-
+                                         /*==========contact==========*/  
 #co{
   background-image: url(img/00.jpg);
   background-repeat: no-repeat;
@@ -186,29 +214,20 @@ h4{color: black;}
       background-size: cover; /* Maintain aspect ratio */
     }}
 
-#w{margin-top: 20px;
-  max-width: 100%; 
-  height: auto; 
-}
 
-#w:hover{transform: scale(1.2);}
-@media (max-width: 1400px) {
-  #w:hover {
-    transform: none; /*disable hover effect */
-  }}
 
 @media (max-width: 767px) {
-  .home  {
-        margin-bottom: 140px; 
+.home  {
+    margin-bottom: 140px; 
     }}
 @media (max-width: 600px) {
-  #profile-image{
+#profile-image{
     margin-top: 40px;
   }
-  .home  {
-        margin-bottom: 300px; 
+.home  {
+    margin-bottom: 300px; 
   }   
-  .home h2 {
+.home h2 {
     font-size: 26px; 
   }
 .home h3 {
@@ -219,13 +238,13 @@ h4{color: black;}
 }}
 @media (max-width: 390px) {
   .home h2 {
-            font-size: 18px; 
-        }
-  .home h3 {
             font-size: 16px; 
         }
+  .home h3 {
+            font-size: 14px; 
+        }
   .home p {
-            font-size: 14px;
+            font-size: 12px;
         }
   .home  {
             margin-bottom: 260px; 
@@ -243,6 +262,7 @@ h4{color: black;}
         }
 }
 
+                                                   /*==========Boxes Animation==========*/
 .box div{
     position:absolute;
     width: 50px;
@@ -295,32 +315,48 @@ h4{color: black;}
       opacity: 0;
     }}
 
-body, html {      
-    overflow-x: hidden; /*prevent horizontal scrolling on smaller screens.*/ }
-  
+    
     @media (max-width: 767px) {
       #Projects {
       margin-top: -100px;
     }}
-    @media (max-width: 604px) {
+    @media (max-width: 605px) {
+      #Projects {
+      margin-top: -50px;
+    }}
+    @media (max-width: 601px) {
+      #Projects {
+      margin-top: -100px;
+    }}
+    @media (max-width: 538px) {
+      #Projects {
+      margin-top: 100px;
+    }}
+    @media (max-width: 490px) {
+      #Projects {
+      margin-top: 100px;
+    }}
+    @media (max-width: 390px) {
+      #Projects {
+      margin-top: -200px;
+    }}
+    @media (max-width: 345px) {
+      #Projects {
+      margin-top: -200px;
+    }}
+    @media (max-width: 285px) {
       #Projects {
       margin-top: -150px;
     }}
-  
-    @media (max-width: 482px) {
+    @media (max-width: 230px) {
       #Projects {
-      margin-top: -200px;
+      margin-top: -100px;
     }}
-    @media (max-width: 414px) {
+    @media (max-width: 205px) {
       #Projects {
-      margin-top: -200px;
+      margin-top: 200px;
     }}
   
-    @media (max-width: 600px) {
-      #Projects {
-      margin-top: -250px;
-    }} 
-
   @media (max-width: 767px) {
     #w {
       width: 100%; /* Make images fill the container width */
@@ -333,8 +369,7 @@ body, html {
       height: auto; /* Maintain aspect ratio */
       max-width: 300px; /* Set a maximum width for smaller screens */
       max-height: 200px;
-    }
-}
+    }}
 
 /* Add styles to center content in the middle for phone screens */
 @media (max-width: 580px) {
@@ -343,22 +378,8 @@ body, html {
   }
 }
 
-.home::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation: move 1s ease forwards;
-  animation-delay: 0.4s;
-  height: 100%;
-  width: 100%;
-  background-color:#081b29;
-}
-@keyframes move {
-  100% {
-    width: 0;
-  }
-}
+body, html {      
+  overflow-x: hidden; /*prevent horizontal scrolling on smaller screens.*/ }
 
 
 
