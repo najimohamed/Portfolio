@@ -172,6 +172,22 @@ h2{color: white;}
       transform: none; /*disable hover effect */
     }}
 
+  #pdf-be{
+      background-color: #00abf0;
+      color: black;
+      border-radius:8px;
+      padding: 10px;
+      font-size: 18px;
+      width: 150px;
+      margin-bottom: 40px;}
+  #pdf-be:hover{background-color:#081b29;
+      color: #00abf0;
+      border-color: #00abf0;}
+  @media (max-width: 767px) {
+        #pdf-be {
+          font-size: 14px;
+          width: 100px;}} 
+
                                              /*==========skills==========*/   
 #sk{
   background: linear-gradient(to bottom right, black, #081b29);
@@ -179,21 +195,7 @@ h2{color: white;}
   padding-bottom: 20px;
   text-align: center;}
 
-  #pdf-be{
-    background-color: #00abf0;
-    color: black;
-    border-radius:8px;
-    padding: 10px;
-    font-size: 18px;
-    width: 150px;
-    margin-bottom: 40px;}
-#pdf-be:hover{background-color:#081b29;
-    color: #00abf0;
-    border-color: #00abf0;}
-@media (max-width: 767px) {
-      #pdf-be {
-        font-size: 14px;
-        width: 100px;}}  
+
 
 #p3{color: white;}
 
@@ -205,6 +207,7 @@ h2{color: white;}
   background-position: center;
   background-size: cover;
   width: 500px;
+  height: 320px;
   border-radius: 15px;}
 
   @media (max-width: 767px) {
