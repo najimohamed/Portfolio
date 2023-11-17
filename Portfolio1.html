@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Portfolio</title>
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+	<link href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style1.css">
+	<script src="https://kit.fontawesome.com/5ba741290a.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+</head>
+<body>
+   <div class="container-fluid">
+
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+					<div class="container-fluid">
+						<h1 class="navbar-brand" href="#">-포트폴리오-</h1>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ms-auto"> <!-- ms-auto class for right alignment -->
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#Über mich">Über mich</a>
+								</li> 								
+								<li class="nav-item">
+									<a class="nav-link active" href="#Projects">Projects</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="#Skills">Skills</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="#Contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				
+				<script>
+					const toggleButton = document.querySelector('.navbar-toggler');
+					toggleButton.addEventListener('click', function() {
+						const menuCollapse = document.querySelector('.navbar-collapse');
+						menuCollapse.classList.toggle('show');
+					});
+				</script>
+								       
+	</div>
+  
+	
+	<div class="row home">
+
+		<div class="form-group col-md-4" style="text-align: center;">  
+			<img src="img/pic.jpeg" class="img rounded-circle" id="profile-image">
+	    </div> 
+			
+		<div class="form-group col-md-8">
+			<section id="Über mich">
+
+			<div id="p1"> 
+			<h2><ins><i>About me :</i></ins></h2> <br>
+			<h3 class="multiText"></h3> <br>
+			<p>My name is Mohamed Naji, I'm a highly motivated IT specialist & Sofware Developer from Morocco. With a strong educational background in Computer Network Technologies and IT Development, I have sharpened my skills through 2 internships, I got a solid foundation in various technical skills. 
+			   I am always striving to learn and develop new skills. I am also excited about the prospect of taking on new challenges. I am committed to keeping up with the latest industry trends and emerging technologies. I really want to do something in the IT field. 
+			</p> <br>
+			<section id="Lebenslauf">           
+			<a  href="Lebenslauf.pdf" target="_blank"><button id="pdf-button" value="Open PDF">Resume</button></a>													
+			</section> 
+			</div> 
+		
+		   </section>	  
+	    </div>
+					
+	</div>
+    
+
+	<main>
+
+		<section id="Projects">
+			<h2 class="container"><ins><i>Projects :</i></ins></h2> <br>
+			<h3 id="hh3" class="container"> Here is some projects I'have built (Front end).</h3>
+			<ul class="list-group container">
+				<li class="list-group-item">
+					<h4>1: Portfolio Website</h4>
+					<p>HTML, CSS</p>											
+				</li>
+				<li class="list-group-item">
+					<h4>2: Wallpepers Website</h4>
+					<p>Informations- Landscapes- Maps</p>
+					<p>HTML, CSS, Bootstrap</p>
+				</li>
+				<li class="list-group-item">
+					<h4>3: Dark & Light Mode Toggle + Read More/Read Less Button</h4>
+					<p>HTML, CSS, Javascript</p>																		
+				</li>
+				<li class="list-group-item">
+					<h4>4: Blog Website</h4>
+					<p>you can 'list-delete-add' articales</p>
+					<p>React-Javascript-JSON Server</p>
+				</li>
+				<li class="list-group-item">
+					<h4>5: Countries</h4>
+					<p>A countries related information search website</p>
+					<p>HTML, CSS, Javascript, Bootstrap</p>
+				</li>
+				<li class="list-group-item">
+					<h4>6: Mercedes Shopping Website</h4>
+					<p>HTML, CSS, Javascript, Bootstrap</p>
+				</li>
+				<li class="list-group-item">
+					<h4>7: Games Website</h4>
+					<p>TicTacToe- Snake- Pong</p>
+					<p>HTML, CSS, Javascript</p>	
+				</li>
+			</ul> <br><br>
+
+			<div style="text-align: center;"> <!--center the image or the video-->
+
+				<p class="text text-center" id="p2">Project 1: Portfolio Website</p> 
+				<video id="z" controls muted width="750" style="height: 550px">
+					<source src="vid/Personal portfolio.mp4">			
+				</video> <br>
+
+			    <a href="portfolio website.rar" download style="display: block; margin-top: 20px;">Download Code</a> 
+
+			</div> <br><br>
+
+			<div>
+
+				<p class="text text-center" id="p2">Project 2: Wallpepers Website</p> 
+
+				<section class="container1">
+                    <div class="slider-wrapper">
+                        <div class="slider">	
+				            <img id="slide-1" src="img/w1.png">
+				            <img id="slide-2" src="img/w2.png">                           
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                        </div>
+                    </div>	
+                </section>
+			</div> <br><br>
+			
+			<div class="row">
+
+				<p class="text text-center" id="p2">Project 3: Dark & Light Mode Toggle + Read More/Read Less Button</p> 
+
+				<section class="container1">
+                    <div class="slider-wrapper">
+                        <div class="slider">	
+				            <img id="slide-3" src="img/1.png">
+				            <img id="slide-4" src="img/2.png">                           
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-3"></a>
+                            <a href="#slide-4"></a>
+                        </div>
+                    </div>	
+                </section>
+				<a class="text text-center" href="Dark & Light Mode Toggle, Read MoreRead Less Button.rar" download style="display: block; margin-top: -20px;">Download Code</a> 
+
+			</div> <br><br>
+			
+			<div class="row">
+
+				<p class="text text-center" id="p2">Project 4: Blog Website</p> 
+
+				<section class="container1">
+                    <div class="slider-wrapper">
+                        <div class="slider">	
+				            <img id="slide-5" src="img/B1.png">
+				            <img id="slide-6" src="img/B2.png">
+							<img id="slide-7" src="img/B3.png">                            
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-5"></a>
+                            <a href="#slide-6"></a>
+							<a href="#slide-7"></a>
+                        </div>
+                    </div>	
+                </section>
+							  <!--<a class="text text-center" href="Blog web.rar" download style="display: block; margin-top: 30px;">Download Code</a> --> 							
+			</div> <br><br>
+			
+			<div class="row">
+
+				<p class="text text-center" id="p2">Project 5: Countries</p> 
+
+				<section class="container1">
+                    <div class="slider-wrapper">
+                        <div class="slider">	
+				            <img id="slide-8" src="img/c1.png">
+				            <img id="slide-9" src="img/c2.png">                           
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-8"></a>
+                            <a href="#slide-9"></a>
+                        </div>
+                    </div>	
+                </section>
+
+				<a class="text text-center" href="Countries.rar" download style="display: block; margin-top: 20px;">Download Code</a>
+			
+			</div> <br><br>	
+
+			<div class="row">
+
+				<p class="text text-center" id="p2">Project 6: Mercedes Shopping Website</p> 
+
+				<section class="container1">
+                    <div class="slider-wrapper">
+                        <div class="slider">	
+				            <img id="slide-10" src="img/m1.png">
+				            <img id="slide-11" src="img/m2.png">                           
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-10"></a>
+                            <a href="#slide-11"></a>
+                        </div>
+                    </div>	
+                </section>
+
+				<a class="text text-center" href="Shoping Website.rar" download style="display: block; margin-top: 20px;">Download Code</a>
+			
+			</div> <br><br>
+				
+            <div style="text-align: center;"> <!--center the image or the video-->
+
+				<p class="text text-center" id="p2">Project 7: Games Website</p>  
+				<video id="z" controls muted width="750" style="height: 550px;">
+					<source src="vid/Games Website.mp4">			
+				</video> <br>
+
+			    <a href="Games Website.rar" download style="display: block; margin-top: 20px;">Download Code</a> 
+
+			</div> <br><br>
+				
+				<h3 id="hh3" class="container"> Back end Programmes.</h3> <br>
+				<div style="text-align: center;">
+					<section id="be">           
+						<a  href="Back End Projects.pdf" target="_blank"><button id="pdf-be" value="Open PDF">Projects file</button></a>													
+					</section> 
+				</div>	
+			
+		</section> <br><br>
+		
+		<section id="Skills">
+			<div class="row" id="sk">
+				<div class="form-group col-md-6"><h2 class="text text-center"> <br> <ins><i>Skills:</i></ins></h2><br><p id="p3" class="text text-center">Here are a couple of languages and tools I've worked with.</p></div>
+				<div class="form-group col-md-3" id="p3">
+					<i><b><h3>Front end</h3></b></i> <br>
+					<p>HTML/ CSS</p><p>Javascript</p><p>Bootstrap</p><p>React</p>
+				</div>
+				<div class="form-group col-md-3" id="p3">
+					<i><b><h3>Back end</h3></b></i> <br>
+					<p>C,C#</p><p>Python</p><p>MySQL</p>
+				</div>
+			</div>
+		</section> <br><br>
+		
+		<section id="Contact">
+
+			<div id="co" class="container" style="text-align: center;">
+
+			<h2><ins><i>Contact me :</i></ins></h2> <br>			
+			<label  id="p2">Email: najimohamed853@gmail.com</label> <br><br>
+			<label  id="p2">Tel:+212 682298630</label>  <br><br>		    
+		 
+				<a href="mailto:najimohamed853@gmail.com"><i class="fa-regular fa-envelope fa-beat fa-2xl" style="color: #ffffff;"></i></a> <br><br>
+				<a href="https://www.linkedin.com/in/mohamed-naji-ab0939261" target="_blank"><i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #ffffff;"></i></a> <br><br>
+			
+			</div>
+
+        <div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>			
+		</div>
+			 
+		</section>
+
+	</main> <br>   <!-- <div class="d-flex justify-content-center"> to center a button-->
+		
+	<footer>
+		<p class="text text-center container" id="p2">&copy; Portfolio</p>
+	</footer>
+    
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<script> var typingEffect = new Typed( ".multiText", {strings: ["💻 Sofware Developer","💻 IT Specialist"], 
+	loop : true,
+	typeSpeed: 100,
+	backSpeed: 80,
+	backDelay: 1500,})</script>
+	
+</body>
+</html>
