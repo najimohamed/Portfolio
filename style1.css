@@ -45,28 +45,7 @@
   #profile-image {
       width: 150px; 
       height: 150px;}}
-
-  @media (max-width: 1190px){ 
-    .home h2{
-      font-size: 30px;
-      font-weight: 450;}          
-    .home h3{
-      font-size: 25px;
-      font-weight: 400;}          
-    .home p{
-      font-size: 20px;
-      font-weight: 350;}}    
-  @media (max-width: 875px) { 
-    .home h2 {
-      font-size: 25px; 
-    }
-    .home h3 {
-      font-size: 20px; 
-    }
-    .home p {
-      font-size: 15px;
-    }}
-  
+ 
   .home h2{
       font-size: 35px;
       font-weight: 500;}  
@@ -78,7 +57,28 @@
       font-size: 25px;
       font-weight: 400;
       color: white;    
-      max-width: 95%;}  
+      max-width: 95%;}
+      
+@media (max-width: 1230px){ 
+  .home h2{
+    font-size: 25px;
+    font-weight: 450;}          
+  .home h3{
+    font-size: 22px;
+    font-weight: 400;}          
+  .home p{
+    font-size: 18px;
+    font-weight: 350;}}    
+@media (max-width: 875px) { 
+  .home h2 {
+    font-size: 25px; 
+  }
+  .home h3 {
+    font-size: 20px; 
+  }
+  .home p {
+    font-size: 15px;
+  }}      
 
     
   @media (min-width: 769px) and (max-width: 814px){
@@ -144,7 +144,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    width: 100%;}
   #p2{
     font-size: 22px;
     color: white;}
@@ -177,7 +178,8 @@
     padding-bottom: 20px;
     text-align: center;}
    
-  #p3{color: white;} 
+  #p3{color: white;
+    font-size: 22px;} 
   
                                            /*==========contact==========*/  
   #co{
@@ -187,6 +189,7 @@
     background-position: center;
     background-size: cover;
     width: 500px;
+    height: 320px;
     border-radius: 15px;}
   
     @media (max-width: 767px) {
@@ -305,20 +308,24 @@
     }}    
   @media (max-width: 601px) {
       #Projects {
-      margin-top: -100px;
+      margin-top: -150px;
     }}
   @media (max-width: 538px) {
       #Projects {
-      margin-top: 100px;
+      margin-top: -100px;
     }}
   @media (max-width: 490px) {
       #Projects {
-      margin-top: 100px;
+      margin-top: -100px;
+    }}
+  @media (max-width: 420px) {
+      #Projects {
+      margin-top: 200px;
     }}
   @media (max-width: 390px) {
-      #Projects {
-      margin-top: -200px;
-    }}
+    #Projects {
+    margin-top: -200px;
+  }}
   @media (max-width: 345px) {
       #Projects {
       margin-top: -200px;
