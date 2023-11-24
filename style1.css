@@ -195,7 +195,7 @@
     @media (max-width: 767px) {
       #co {
         width: 100%; /* Make the background image fill the container width */
-        height: 300px; /* Set a specific height for the background image on smaller screens */
+        height: 350px; /* Set a specific height for the background image on smaller screens */
         background-size: cover; /* Maintain aspect ratio */
       }}
   
