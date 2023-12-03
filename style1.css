@@ -228,6 +228,16 @@
     width: 500px;
     height: 350px;
     border-radius: 15px;}
+
+    @media (max-width: 768px) {
+      #Projects {
+        background-image: none;
+      }
+  
+      #co {
+        background-image: none;
+      }
+  }
   
     @media (max-width: 767px) {
       #co {
