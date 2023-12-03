@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; 
 }
+body {
+  width: fit-content;
+}
 
   @media (max-width: 767px) {
     h2 {
@@ -229,15 +232,6 @@
     height: 350px;
     border-radius: 15px;}
 
-    @media (max-width: 768px) {
-      #Projects {
-        background-image: none;
-      }
-  
-      #co {
-        background-image: none;
-      }
-  }
   
     @media (max-width: 767px) {
       #co {
