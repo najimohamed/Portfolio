@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box; 
 }
-body {
-  width: fit-content;
-}
 
   @media (max-width: 767px) {
     h2 {
@@ -82,7 +79,7 @@ body {
       font-size: 22px;
       font-weight: 400;
       color: white;    
-      max-width: 95%;}
+      max-width: 85%;}
       
 @media (max-width: 1230px){ 
   .home h2{
@@ -236,8 +233,7 @@ body {
     @media (max-width: 767px) {
       #co {
         width: 100%; /* Make the background image fill the container width */
-        height: 350px; /* Set a specific height for the background image on smaller screens */
-        background-size: cover; /* Maintain aspect ratio */
+        height: 350px; 
       }}
   
     
