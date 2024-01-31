@@ -405,40 +405,52 @@
     margin-top: -50px;
     }}    
   @media (max-width: 601px) {
-      #Projects {
-      margin-top: -150px;
+    #Projects {
+    margin-top: -150px;
     }}
   @media (max-width: 538px) {
-      #Projects {
-      margin-top: -100px;
+    #Projects {
+    margin-top: -100px;
     }}
   @media (max-width: 490px) {
-      #Projects {
-      margin-top: -100px;
+    #Projects {
+    margin-top: 100px;
     }}
   @media (max-width: 420px) {
-      #Projects {
-      margin-top: 200px;
+    #Projects {
+    margin-top: 200px;
     }}
   @media (max-width: 390px) {
     #Projects {
     margin-top: -200px;
   }}
   @media (max-width: 345px) {
-      #Projects {
-      margin-top: -200px;
+    #Projects {
+    margin-top: -150px;
     }}
   @media (max-width: 285px) {
-      #Projects {
-      margin-top: -150px;
+    #Projects {
+    margin-top: -130px;
     }}
   @media (max-width: 230px) {
-      #Projects {
-      margin-top: -100px;
+    #Projects {
+    margin-top: -100px;
     }}
   @media (max-width: 205px) {
-      #Projects {
-      margin-top: 200px;
+    #Projects {
+    margin-top: 200px;
+    }}
+  @media (max-width: 175px) {
+    #Projects {
+    margin-top: 350px;
+    }}
+  @media (max-width: 160px) {
+    #Projects {
+    margin-top: 500px;
+    }}
+  @media (max-width: 135px) {
+    #Projects {
+      margin-top: 700px;
     }}
 
   @media (max-width: 767px) {
