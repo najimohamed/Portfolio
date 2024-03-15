@@ -488,7 +488,7 @@
 .slider img{
   flex: 1 0 100%;
   scroll-snap-align: start;
-  height: 400px;
+  height: 300px;
   width: 100%;
   transition: all 0.15s ease;
 }
