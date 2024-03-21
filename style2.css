@@ -172,6 +172,59 @@ input:checked + label .description {
         align-items: center;
     }
 }
+@media (max-width: 768px) {
+    .card-body h5,
+    .card-body p {
+      font-size: smaller; 
+    }
+  }
+  @media (max-width: 505px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 40px; 
+    }
+  }
+  @media (max-width: 470px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 60px; 
+    }
+  }
+  @media (max-width: 435px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 80px; 
+    }
+  }
+  @media (max-width: 420px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 100px; 
+    }
+  }
+  @media (max-width: 400px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 120px; 
+    }
+  }
+  @media (max-width: 385px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 150px; 
+    }
+  }
+  @media (max-width: 355px) {
+    .card-body h5,
+    .card-body p {
+      margin-left: 180px; 
+    }
+  }
+  @media (max-width: 425px) {
+    .card {
+        max-height: 18rem; 
+    }
+  }
 
 
                                         
