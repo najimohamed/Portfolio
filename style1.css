@@ -68,7 +68,7 @@
                                                  /*==========Home==========*/ 
   .home{
     align-items: center;
-    height: 100vh;
+    height: 95vh;
   } 
   
   #profile-image {
@@ -85,11 +85,19 @@
   @media (max-width: 955px) {
     #profile-image {
         width: 220px; 
-        height: 220px;}}       
+        height: 220px;}}
+        @media (max-width: 767px) {
+          #profile-image {
+              margin-top: 100px;}}
+              @media (max-width: 590px) {
+                #profile-image {
+                    margin-bottom: 100px;}}         
   @media (max-width: 390px) {
   #profile-image {    
       width: 200px; 
-      height: 200px;}}
+      height: 200px;
+      margin-bottom: 20px;}
+      }
   @media (max-width: 270px) {
   #profile-image {
       width: 150px; 
@@ -264,7 +272,7 @@
 {
     position: relative;
     width: 300px;
-    height: 380px;
+    height: 400px;
     background: #2e2e2e;
     display: flex;
     justify-content: center;
@@ -318,8 +326,7 @@
 }
 .containersk .box .content .icon
 {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    
     color: var(--clr);
     width: 80px;
     height: 80px;
