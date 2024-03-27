@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tomorrow-night-blue.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+
+
+ <h4>Python Programmes:</h4>
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-6" style="margin-left: -50px;">
+            <p>Countdown timer program :</p>
+            <pre>
+                <code class="language-python" style="width: 600px; margin-top: 20px;">
+import time
+
+my_time = int(input("Enter the time in seconds: "))
+            
+for x in range(my_time, 0, -1):
+    seconds = x % 60
+    minutes = int(x / 60) % 60
+    hours = int(x / 3600)
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+    time.sleep(1)
+            
+print("TIME'S UP!")
+                </code>
+            </pre>
+        </div>
+        <div class="col-md-6" style="margin-left: 50px;">
+            <p>Shopping cart program:</p>
+            <pre>
+                <code class="language-python" style="width: 600px; margin-top: 20px;">
+foods = []
+prices = []
+total = 0
+            
+while True:
+    food = input("Enter a food to buy (q to quit): ")
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input(f"Enter the price of a {food}: $"))
+        foods.append(food)
+        prices.append(price)
+                    
+        print("----- YOUR CART -----")
+        for food in foods:
+            print(food, end=" ")
+                    
+        for price in prices:
+            total += price
+                    
+        print()
+        print(f"Your total is: ${total}")
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6" style="margin-left: -50px;">
+            <p>Quiz Game :</p>
+            <pre>
+                <code class="language-python" style="width: 600px; margin-top: 40px;">
+questions = (
+    "How many elements are in the periodic table?: ",
+    "Which animal lays the largest eggs?: ",
+    "What is the most abundant gas in Earth's atmosphere?: ",
+    "How many bones are in the human body?: ",
+    "Which planet in the solar system is the hottest?: "
+)
+            
+options = (
+    ("A. 116", "B. 117", "C. 118", "D. 119"),
+    ("A. Whale", "B. Crocodile", "C. Elephant", "D. Ostrich"),
+    ("A. Nitrogen", "B. Oxygen", "C. Carbon-Dioxide", "D. Hydrogen"),
+    ("A. 206", "B. 207", "C. 208", "D. 209"),
+    ("A. Mercury", "B. Venus", "C. Earth", "D. Mars")
+)
+            
+answers = ("C", "A", "B", "A", "B")
+guesses = []
+score = 0
+question_num = 0
+            
+for question in questions:
+    print("----------------------")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+            
+    valid_input = False
+    while not valid_input:
+        guess = input("Enter (A, B, C, D): ").upper()
+        if guess not in ["A", "B", "C", "D"]:
+            print("Invalid input. Please enter a valid option (A, B, C, D).")
+        else:
+            valid_input = True
+            guesses.append(guess)
+            if guess == answers[question_num]:
+                score += 1
+                print("CORRECT!")
+            else:
+                print("INCORRECT!")
+                print(f"{answers[question_num]} is the correct answer")
+            
+    question_num += 1
+            
+print("----------------------")
+print(" RESULTS ")
+print("----------------------")
+print("answers: ", end="")
+for answer in answers:
+    print(answer, end=" ")
+print()
+print("guesses: ", end="")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+score = int(score / len(questions) * 100)
+print(f"Your score is: {score}%")        
+                </code>
+            </pre>
+        </div>
+        <div class="col-md-6" style="margin-left: 50px;">
+            <p>DICE ROLLER program :</p>
+            <pre>
+                <code class="language-python" style="width: 600px; margin-top: 40px;">
+import random
+dice_art = {
+    1: ("┌─────────┐",
+        "│         │",
+        "│    ●    │",
+        "│         │",
+        "└─────────┘"),
+    2: ("┌─────────┐",
+        "│    ●    │",
+        "│         │",
+        "│    ●    │",
+        "└─────────┘"),
+    3: ("┌─────────┐",
+        "│    ●    │",
+        "│    ●    │",
+        "│    ●    │",
+        "└─────────┘"),
+    4: ("┌─────────┐",
+        "│    ● ●  │",
+        "│         │",
+        "│  ● ●    │",
+        "└─────────┘"),
+    5: ("┌─────────┐",
+        "│    ● ●  │",
+        "│    ●    │",
+        "│  ● ●    │",
+        "└─────────┘"),
+    6: ("┌─────────┐",
+        "│    ● ●  │",
+        "│    ● ●  │",
+        "│    ● ●  │",
+        "└─────────┘")
+}
+dice = []
+total = 0
+num_of_dice = int(input("How many dice?: "))
+for die in range(num_of_dice):
+    dice.append(random.randint(1, 6))
+# PRINT VERTICALLY
+# for die in range(num_of_dice):
+# for line in dice_art.get(dice[die]):
+# print(line)
+# PRINT HORIZONTALLY
+for line in range(5):
+    for die in dice:
+        print(dice_art.get(die)[line], end="")
+    print()
+for die in dice:
+    total += die
+print(f"total: {total}")
+                </code>
+            </pre>
+        </div>
+    </div>
+    <h4>C# Programmes :</h4>
+    <div class="row">
+        <div class="col-md-6" style="margin-left: -50px;">
+            <p>Number guessing game :</p>
+            <pre>
+                <code class="language-C#" style="width: 600px; margin-top: 40px;">
+Random random = new Random();
+bool playAgain = true;
+int min = 1;
+int max = 10;
+int guess;
+int number;
+int guesses;
+String response;
+while (playAgain)
+{
+    guess = 0;
+    guesses = 0;
+    response = "";
+    number = random.Next(min, max + 1);
+    while (guess != number)
+    {
+        Console.WriteLine("Guess a number between " + min +" - " + max + " :");
+        guess = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Guess: " + guess);
+        
+        if (guess > number)
+        {
+            Console.WriteLine(guess + " is high!");
+        }
+        else if (guess < number)
+        {
+            Console.WriteLine(guess + " is low!");
+        }
+        guesses++;
+    }
+    Console.WriteLine("Number: " + number); // exiting the while loop, means we got the right number
+    Console.WriteLine("YOU WIN!");
+    Console.WriteLine("Guesses: " + guesses);
+    Console.WriteLine("Would you like to play again (Y/N):");
+    response = Console.ReadLine();
+    response = response.ToUpper();
+    if (response == "Y")
+    {
+        playAgain = true;
+    }
+    else
+    {
+        playAgain = false;
+    }
+}
+Console.WriteLine("Thanks for playing! ... I guess");
+                </code>
+            </pre>
+        </div>
+        <div class="col-md-6" style="margin-left: 50px;">
+            <p>Rock, Paper, Scissors :</p>
+            <pre>
+                <code class="language-C#" style="width: 600px; margin-top: 40px;">
+Random random = new Random();
+bool playAgain = true;
+string player;
+string computer;
+string answer;
+            
+while (playAgain)
+{
+    player = "";
+    computer = "";
+    answer = "";
+            
+    while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+    {
+        Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
+        player = Console.ReadLine();
+        player = player.ToUpper();
+    }
+            
+    switch (random.Next(1, 4))
+    {
+        case 1:
+            computer = "ROCK";
+            break;
+        case 2:
+            computer = "PAPER";
+            break;
+        case 3:
+            computer = "SCISSORS";
+            break;
+    }
+            
+    Console.WriteLine("Player: " + player);
+    Console.WriteLine("Computer: " + computer);
+            
+    switch (player)
+    {
+        case "ROCK":
+            if (computer == "ROCK")
+            {
+                Console.WriteLine("It's a draw!");
+            }
+            else if (computer == "PAPER")
+            {
+                Console.WriteLine("You lose!");
+            }
+            else
+            {
+                Console.WriteLine("You win!");
+            }
+            break;
+        case "PAPER":
+            if (computer == "ROCK")
+            {
+                Console.WriteLine("You win!");
+            }
+            else if (computer == "PAPER")
+            {
+                Console.WriteLine("It's a draw!");
+            }
+            else
+            {
+                Console.WriteLine("You lose!");
+            }
+            break;
+        case "SCISSORS":
+            if (computer == "ROCK")
+            {
+                Console.WriteLine("You lose!");
+            }
+            else if (computer == "PAPER")
+            {
+                Console.WriteLine("You win!");
+            }
+            else
+            {
+                Console.WriteLine("It's a draw!");
+            }
+            break;
+    }
+            
+    Console.Write("Would you like to play again (Y/N): ");
+    answer = Console.ReadLine();
+    answer = answer.ToUpper();
+            
+    if (answer == "Y")
+    {
+        playAgain = true;
+    }
+    else
+    {
+        playAgain = false;
+    }
+}
+            
+Console.WriteLine("Thanks for playing!");       
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<style>
+    h4{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    p{
+        text-align: center;
+    }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
